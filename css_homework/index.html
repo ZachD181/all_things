@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 1.0;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: #15c5ae;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: rgb(32, 122, 196);
+            color: black;
+        }
+
+        body {
+            background-color: rgb(255, 250, 250);
+            text-decoration-color: aliceblue;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .fakeimg {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .column.side {
+            width: 50%;
+        }
+
+        .column.middle {
+            width: 100%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(84, 241, 70);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <h2>Website Made by Me</h2>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Love</a>
+        <a href="#">Life</a>
+        <a href="#">The way</a>
+        <a href="#" class="right">Link</a>
+    </div>
+
+    <div class="flex-container">
+        <h1>About Me</h1>
+        <p>pic of me</p>
+        <img id="me" src="getoutthe way.jpeg">
+        <p>Some words about me</p>
+    </div>
+    <div class="column middle">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+            venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+            aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor
+            sed accumsan convallis.</p>
+    </div>
+    <div class="fakeimg" style="height:60px;">Image</div>
+    <br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+    <br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+
+    <div class="main">
+        <h2>Title Heading</h2>
+        <h5>Title description, Dec 17, 2017</h5>
+    </div>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    Some text..
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    </p>
+    <br>
+    <div class="title heading" <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+    </div>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    Some text..
+    <p>
+        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    </p>
+    </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</head>
+</body>
+
+</html>
